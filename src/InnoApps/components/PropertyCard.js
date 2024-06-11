@@ -18,7 +18,9 @@ const PropertyCard = props => {
       <ImageBackground
         style={styles.image}
         source={require('../assets/House.png')}>
-        <RatingComponent rating={rating} />
+        <View style={styles.ratingCon}>
+          <RatingComponent rating={rating} />
+        </View>
       </ImageBackground>
       <View style={styles.infoCon}>
         <View>
@@ -128,5 +130,11 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontWeight: '500',
     fontSize: 12,
+  },
+  ratingCon: {
+    flex: 1,
+    alignItems: 'flex-start',
+    marginTop: 9,
+    marginLeft: 7,
   },
 });

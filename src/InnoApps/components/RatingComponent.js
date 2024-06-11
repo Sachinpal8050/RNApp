@@ -15,12 +15,12 @@ export default RatingComponent;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     paddingVertical: 5,
     paddingHorizontal: 11,
-    // backgroundColor: 'black',
+    backgroundColor: 'black',
     borderRadius: 3,
-    // borderWidth: 1,
+    borderWidth: 1,
   },
 
   star: {
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: '600',
     fontSize: 11,
-    color: 'black',
+    color: 'white',
   },
 });
